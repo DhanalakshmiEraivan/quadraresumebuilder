@@ -139,3 +139,4 @@ The editor preview is intentionally scaled for screen viewing. PDF generation ne
 - Added `/public/media/ai-resume-hero.svg` for the dedicated AI resume builder landing hero.
 - Apply `supabase/migrations/20260826110000_contact_messages.sql` to enable the contact center backend.
 "# quadraresumebuilder" 
+"# quadraresumebuilder" 
