@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{--ink:#04042c;--ink2:#0a0a3f;--muted:#697086;--paper:#f8f9fc;--line:#e7e9f0;--blue:#3047ff}
+*{box-sizing:border-box;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink)}
+h1,h2,h3,h4{font-family:'Manrope',sans-serif;letter-spacing:-.035em}
+button,input,textarea,select{font:inherit}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:#d4d7e2;border-radius:99px}::-webkit-scrollbar-track{background:transparent}
+.app-grid{background-image:linear-gradient(rgba(4,4,44,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(4,4,44,.035) 1px,transparent 1px);background-size:36px 36px}
+.noise{position:relative}.noise:after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.018;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");z-index:100}
+.glass{background:rgba(255,255,255,.82);backdrop-filter:blur(22px);border:1px solid rgba(255,255,255,.9);box-shadow:0 20px 60px rgba(4,4,44,.07)}
+.dark-glass{background:linear-gradient(145deg,#04042c,#0c0c50);box-shadow:0 25px 70px rgba(4,4,44,.24)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:12px;padding:.72rem 1rem;font-weight:700;font-size:.86rem;transition:.2s}.btn:hover{transform:translateY(-1px)}.btn-primary{background:#04042c;color:#fff;box-shadow:0 10px 24px rgba(4,4,44,.18)}.btn-primary:hover{background:#0a0a45}.btn-soft{background:#fff;color:#04042c;border:1px solid var(--line)}.btn-blue{background:#3047ff;color:#fff}
+.field{width:100%;border:1px solid #dfe2eb;background:#fff;border-radius:11px;padding:.72rem .85rem;outline:0;transition:.2s}.field:focus{border-color:#3047ff;box-shadow:0 0 0 4px rgba(48,71,255,.08)}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 35px rgba(4,4,44,.045)}
+.reveal{animation:reveal .55s ease both}@keyframes reveal{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.float{animation:float 5s ease-in-out infinite}@keyframes float{50%{transform:translateY(-8px)}}
+.shine{background:linear-gradient(110deg,#fff 25%,#eef0ff 40%,#fff 55%);background-size:250% 100%;animation:shine 3.5s linear infinite}@keyframes shine{to{background-position:-250% 0}}
+
+.eyebrow{font-size:.68rem;line-height:1;text-transform:uppercase;letter-spacing:.2em;font-weight:800;color:#3047ff}
